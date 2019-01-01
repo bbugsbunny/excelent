@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: #EAECF0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+    text-align: left;
+    margin: 15px 0;
+    padding: 0px 10px;
+}
+h1 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+/*-------------logo---------------*/
+#logo a p{
+    margin-left: 40px;
+    float: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 1px 0  black;
+}
+#logo a p::after{
+    content: ".";
+    color:red;
+ }
+ #logo a:hover {
+    color: orange;
+ }
+/*---------------nav----------------*/
+nav {
+    background-color: black;
+    position: fixed;
+    overflow: hidden;
+    float: right;
+}
+nav li {
+    float: left;
+    list-style: none;
+}
+nav li a{
+    font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 30px;
+	color: white;
+}
+nav li a:hover {
+	color: white;
+}
+/*-----------------table-------------------*/
+th{
+    text-align: center;
+}
+#tab{
+    width: 585px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+/*-------------------main----------------*/
+#about{
+    font-size: 30px;
+    height: 300px;
+    margin-top: 100px;
+    border-top-style: solid;
+}
+#tarif{
+    border-top-style: solid;
+    padding-top: 20px;
+}
+#partner{
+    border-top-style: solid;
+    padding-top: 20px;
+}
+#new {
+    border-top-style: solid;
+    padding-top: 20px;
+}
+#contact {
+    border-top-style: solid;
+    padding-top: 20px;
+}
+#carousel .container{
+  margin-top: 100px;
+  margin-bottom: -420px;
+  height: 800px;
+  width: 600px;
+}
+/*---------------Other----------------*/
+#partners{
+    margin-top: 100px;
+}
