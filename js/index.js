@@ -1,7 +1,7 @@
 /*--------------Carousel---------*/
-*('.carousel').carousel({
+/*----*('.carousel').carousel({
   interval: 4000
-})
+})----*/
 /*----------------Json-----------*/
 document.getElementById('page-loaded').innerHTML=
 (new Date()).toLocaleTimeString();
