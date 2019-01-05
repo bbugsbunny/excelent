@@ -28,9 +28,10 @@ document.querySelector('#get-html').addEventListener('click', getHtmlData);
         const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function(){
             if (xhr.readyState === 4 && xhr.status === 200) {
-               document.getElementById('info-html').innerHTML = xhr.responseText
+               document.getElementById('info-html').innerHTML = xhr.responseText;
             }
         }
-        xhr.open('GET', 'client.html', true);
+        xhr.open('GET', 'client.htm', true);
         xhr.send();
     }
+    
