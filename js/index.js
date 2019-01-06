@@ -3,8 +3,7 @@
   interval: 4000
 })----*/
 /*----------------Json-----------*/
-document.getElementById('page-loaded').innerHTML=
-(new Date()).toLocaleTimeString();
+document.getElementById('page-loaded').innerHTML=(new Date()).toLocaleTimeString();
 
 document.querySelector('button').addEventListener('click', getData);
 document.querySelector('#get-html').addEventListener('click', getHtmlData);

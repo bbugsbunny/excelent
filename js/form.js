@@ -3,24 +3,25 @@ $('#page-loaded').html( (new Date).toLocaleTimeString() );
 $('form input[type="submit"]').click(sendForm);
 
 function sendForm(e) {
+    const form = $('form')[0];
+    if (!form.checkValidity()) {
+        return;
+    }
     e.preventDefault();
     $.ajax({
-        url: "https://formspree.io/so18-45@ukr.net",
+        url: "https://formspree.io/YOUR-EMAIL-HERE", 
         method: "POST",
         data: {
-            name: $('#form').val(),
-            comment: $('comment').val()
+            name: $('#name').val(),
+            comment: $('#comment').val()
         },
         dataType: "json"
     })
     .done(function(){
         $('form')[0].reset();
-        $('#msg').html('Thank You!');
+        $('#msg').html('Thank you!');
     })
-    .fail(function){
-        $('#error').html('Sorry, there is an error!');
-    })
+    .fail(function(){
+        $('#msg').html('Sorry, there is an error!');
+    });
 }
-
-
-
